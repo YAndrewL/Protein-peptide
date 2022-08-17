@@ -6,3 +6,4 @@ Intermidiate_files/
 pdb_files/
 .idea/
 *.txt
+__pycache__/
