@@ -19,8 +19,8 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=5e-4)
 criterion = nn.CrossEntropyLoss(weight=torch.FloatTensor([1, 17])).to(DEVICE)
 
 # train TR640 & TE639
-train_data = ProteinGraph(data_name='TR640', root='./Dataset_pkl')
-test_data = ProteinGraph(data_name='TE639', root='./Dataset_pkl')
+train_data = ProteinGraph(data_name='TR1154', root='./Dataset_pkl')
+test_data = ProteinGraph(data_name='TE125', root='./Dataset_pkl')
 
 train_batch = DataLoader(train_data, batch_size=64)
 test_batch = DataLoader(test_data, batch_size=9999999)

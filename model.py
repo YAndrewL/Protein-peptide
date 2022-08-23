@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time         : 2022/7/23 13:30
 # @Author       : Yufan Liu
-# @Description  : Model and train
+# @Description  : Model
 
 import torch_geometric.nn as pyg_nn
 import torch.nn as nn

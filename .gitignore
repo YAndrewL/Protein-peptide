@@ -1,9 +1,8 @@
-backup/
 cache_model/
 Dataset/
 Dataset_pkl/
-Intermidiate_files/
 pdb_files/
 .idea/
 *.txt
 __pycache__/
+accessory/
