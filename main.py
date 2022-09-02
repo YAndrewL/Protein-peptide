@@ -2,7 +2,7 @@
 # @Time         : 2022/7/23 17:39
 # @Author       : Yufan Liu
 # @Description  : Main training
-from model import GCNModel
+from model import GCNModel, GraphCombine
 import torch
 import torch.nn as nn
 from data import ProteinGraph
@@ -14,6 +14,7 @@ DEVICE = 'cuda'
 EPOCHS = 500
 
 model = GCNModel().to(DEVICE)
+# model = GraphCombine().to(DEVICE)
 print(model)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=5e-4)
 criterion = nn.CrossEntropyLoss(weight=torch.FloatTensor([1, 17])).to(DEVICE)
